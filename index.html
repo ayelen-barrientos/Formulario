@@ -1,42 +1,52 @@
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-<main>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <h1 id="title">Formulario de encuesta</h1>
-  <p id ="description">cracion de mi primer formulario</p>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 </head>
- <body>
-<form class="container">
-  <label for="name">Nombres</label><br>
-<input id="name-label" type="text"placeholder="Nombres" name="name"  required><br>
- 
- <label for="surname-label">Apellidos</label><br>
-<input id="surname-label" tipe="text"placeholder="Apellido" nome="surname"><br>
+<body>
+  <header class="header"> 
+    <h1 id="title">Formulario de encuesta</h1>
+    <h2 id ="description">cracion de mi primer formulario</h2>
+  </header>
+ <div>
+    <form class="formulario">
+      <label for="name">Nombres</label><br>
+        <input id="name-label" type="text"placeholder="Nombres" name="name"  required><br>
+     <label for="surname-label">Apellidos</label><br>
+        <input id="surname-label" tipe="text"placeholder="Apellido" nome="surname"><br>
   
- <label for="email">Email</label><br>
-<input id="email-label" tipe="email" placeholder="Email" nome="email" required><br>
-  <label for="number">Edad</label><br>
-  <input id="number-label" type="number" placeholder="Edad"  name="date" min="16" max="90"><br>
+      <label for="email">Email</label><br>
+        <input id="email-label" tipe="email" placeholder="Email" nome="email" required><br>
+      <label for="number">Edad</label><br>
+        <input id="number-label" type="number" placeholder="Edad"  name="date" min="16" max="90"><br>
   
- <label for="dropdown">Pais</label><br>
-  <input list="dropdown">
-  <datalist id="dropdown">
-    <option value="Argentina">
-    <option value="Bolivia">
-    <option value="Brasil">
-    <option value="Chile">
-    <option value="Paraguau">
-    <option value="Uruguay">
-  </datalist><br>
-  
-  <label > Como te resulto completar este formulario:
-  <br><input id="facil" type="radio" name="facil-dificil">facil
-  </label>
-  <label > 
-  <input id="dificil" type="radio" name="facil-dificil">dificil
-</label><br>
-  <label>cuentanos tu experiencia</label>
-  <textarea rows="5" cols="70"></textarea>
-  <button type="submit">Enviar</button>
-</form>
+      <label for="dropdown">Pais</label><br>
+        <input list="dropdown">
+          <datalist id="dropdown">
+            <option value="Argentina">
+            <option value="Bolivia">
+            <option value="Brasil">
+            <option value="Chile">
+            <option value="Paraguau">
+            <option value="Uruguay">
+          </datalist><br>
+      <div class="boton">
+      <label > Como te resulto completar este formulario:
+        <br><input id="facil" type="radio" name="facil-dificil">facil
+      </label>
+      <label > 
+        <input id="dificil" type="radio" name="facil-dificil">dificil
+      </label><br> 
+    </div>
+      <label>cuentanos tu experiencia</label>
+        <textarea rows="5" cols="70"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+ </div>
 </body>
-</main>
+</html>
