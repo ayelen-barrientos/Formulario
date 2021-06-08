@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Primer-Cuestionario</title>
   <link rel="stylesheet" href="estilo.css">
-
+  
 </head>
 <body>
   <header class="header"> 
@@ -14,15 +14,17 @@
     <h2 id ="description">cracion de mi primer formulario</h2>
   </header>
  <div>
-    <form class="formulario">
+    <form class="formulario" id="todo-form">
 
-      <label  for="name">Nombres  </label><br>
+      <label id="nom" for="name">Nombres  </label><br>
         <input id="name-label" type="text"placeholder="Nombres" name="name"   required><br>
-     <label  for="surname-label">Apellidos</label><br>
-        <input id="surname-label" tipe="text"placeholder="Apellido" nome="surname"><br>
+
+     <label  id="ape" for="surname-label">Apellidos</label><br>
+        <input id="surname-label" tipe="text" placeholder="Apellidos" nome="surname"><br>
   
-      <label  for="email">Email</label><br>
-        <input id="email-label" tipe="email" placeholder="Email" nome="email" required><br>
+      <label  id= "email" for="email">Email</label><br>
+        <input id="email-label" tipe="email" placeholder="correo electronico" nome="email" required><br>
+
       <label  for="number">Edad</label><br>
         <input id="number-label" type="number" placeholder="Edad"  name="date" min="16" max="90"><br>
   
@@ -37,17 +39,18 @@
             <option value="Uruguay">
           </datalist><br>
       
-      <label > Como te resulto completar este formulario:</label>
+     <!-- <label id="dificultad" > Como te resulto completar este formulario:</label>
         <br><input id="facil" type="radio" name="facil-dificil" class="radio-bo">facil
       <br>
       <label > 
         <br><input id="dificil" type="radio" name="facil-dificil" class="radio-bo">dificil
-      </label><br> 
+      </label><br>-->
     
       <label>cuentanos tu experiencia</label>
-        <textarea rows="5" cols="70"></textarea>
+        <textarea id="experiencia" rows="5" cols="70" placeholder="escribe una breve opiñon sobre el formulario"></textarea>
       <button type="submit">Enviar</button>
     </form>
  </div>
-</body>
+ </body> 
+ <script src="seccion.js" ></script>
 </html>
